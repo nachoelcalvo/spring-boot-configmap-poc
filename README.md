@@ -1,2 +1,2 @@
-# spring-boot-configmap-quickstart
-Spring-Boot Microservice Reconfiguration using Kubernetes ConfigMaps
+# spring-boot-configmap-poc
+Spring-Boot Microservice Reconfiguration using OpenShift ConfigMaps
