@@ -20,11 +20,12 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <!-- configure the versions you want to use here -->
+        <!-- fabric8 and spring boot versions-->
         <fabric8.version>2.2.170</fabric8.version>
-        <spring-boot.version>1.4.1.RELEASE</spring-boot.version>
+        <spring-boot.version>1.5.3.RELEASE</spring-boot.version>
         <spring-cloud-kubernetes.fabric8.version>0.1.6</spring-cloud-kubernetes.fabric8.version>
         <!--<spring-cloud-kubernetes.version>0.2.0.RELEASE</spring-cloud-kubernetes.version>-->
+
         <!-- maven plugin versions -->
         <fabric8.maven.plugin.version>3.5.28</fabric8.maven.plugin.version>
         <maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>
@@ -58,17 +59,9 @@
             <artifactId>spring-cloud-starter-kubernetes</artifactId>
             <version>${spring-cloud-kubernetes.fabric8.version}</version>
         </dependency>
-
         <!--<dependency>-->
         <!--<groupId>org.springframework.cloud</groupId>-->
         <!--<artifactId>spring-cloud-starter-kubernetes</artifactId>-->
-        <!--</dependency>-->
-
-        <!-- Optional dependencies -->
-        <!--<dependency>-->
-        <!--<groupId>org.springframework.boot</groupId>-->
-        <!--<artifactId>spring-boot-configuration-processor</artifactId>-->
-        <!--<optional>true</optional>-->
         <!--</dependency>-->
     </dependencies>
 
