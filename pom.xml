@@ -4,7 +4,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>me.nicolaferraro.quickstarts</groupId>
+    <groupId>com.jcasado.personal</groupId>
     <artifactId>spring-boot-configmap</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -31,21 +31,6 @@
         <maven-surefire-plugin.version>2.18.1</maven-surefire-plugin.version>
     </properties>
 
-    <dependencyManagement>
-        <dependencies>
-            <!--<dependency>-->
-                <!--<groupId>io.fabric8</groupId>-->
-                <!--<artifactId>spring-cloud-kubernetes-core</artifactId>-->
-                <!--<version>${spring-cloud-kubernetes.version}</version>-->
-            <!--</dependency>-->
-            <!--<dependency>-->
-                <!--<groupId>org.springframework.cloud</groupId>-->
-                <!--<artifactId>spring-cloud-starter-kubernetes</artifactId>-->
-                <!--<version>${spring-cloud-kubernetes.fabric8.version}</version>-->
-            <!--</dependency>-->
-        </dependencies>
-    </dependencyManagement>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -60,33 +45,31 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <!-- Testing -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
 
         <!-- Spring Cloud Kubernetes -->
-
         <dependency>
             <groupId>io.fabric8</groupId>
-            <artifactId>spring-cloud-kubernetes-core</artifactId>
+            <artifactId>spring-cloud-starter-kubernetes</artifactId>
             <version>${spring-cloud-kubernetes.fabric8.version}</version>
         </dependency>
+
         <!--<dependency>-->
-            <!--<groupId>org.springframework.cloud</groupId>-->
-            <!--<artifactId>spring-cloud-starter-kubernetes</artifactId>-->
+        <!--<groupId>org.springframework.cloud</groupId>-->
+        <!--<artifactId>spring-cloud-starter-kubernetes</artifactId>-->
         <!--</dependency>-->
 
         <!-- Optional dependencies -->
         <!--<dependency>-->
-            <!--<groupId>org.springframework.boot</groupId>-->
-            <!--<artifactId>spring-boot-configuration-processor</artifactId>-->
-            <!--<optional>true</optional>-->
+        <!--<groupId>org.springframework.boot</groupId>-->
+        <!--<artifactId>spring-boot-configuration-processor</artifactId>-->
+        <!--<optional>true</optional>-->
         <!--</dependency>-->
-
-        <!-- testing -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <scope>test</scope>
-        </dependency>
-
     </dependencies>
 
     <build>

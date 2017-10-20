@@ -1,4 +1,4 @@
-package me.nicolaferraro.quickstarts;
+package com.jcasado.poc;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
